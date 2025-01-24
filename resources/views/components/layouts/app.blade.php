@@ -9,9 +9,8 @@
     </head>
     <body>
         <livewire:navbar />
-        <main class="max-w-2xl mx-auto mt-4">
-            {{ $slot }}
-        </main>
+
+        {{ $slot }}
         <script data-navigate-once>
             console.log('page loaded');
         </script>
