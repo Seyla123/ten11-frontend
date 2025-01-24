@@ -1,4 +1,5 @@
-<div class="w-6">
+@props(['class' => ''])
+<div class="w-6 {{ $class }}">
     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="18" width="18"
         xmlns="http://www.w3.org/2000/svg" style="padding-top: 2px;">
         <path
