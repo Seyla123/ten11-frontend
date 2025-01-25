@@ -1,4 +1,4 @@
-<nav>
+<nav class="relative" x-data={open:false}>
     <div class="flex justify-between px-4 items-center h-20 max-w-screen-xl mx-auto">
         {{-- hamburger menu and logo --}}
         <div class="flex gap-4 w-full">
@@ -10,7 +10,9 @@
         </div>
         {{-- other menu --}}
         <div class="flex justify-end gap-4 items-center w-full">
-            <x-icons.search />
+            <button @click="open = true">
+                <x-icons.search />
+            </button>
             <x-icons.ring />
             <x-icons.bag />
             <x-icons.watchlist />
@@ -24,6 +26,19 @@
                     <x-icons.arrow-down />
                 </div>
             @endif
+        </div>
+    </div>
+    {{-- search --}}
+    <div x-show="open" @click.outside="open = false" class="bg-white fixed h-[80%] w-full z-10 top-0 px-2">
+        <div class="border-b border-black max-w-screen-xl mx-auto mt-4 py-2  flex">
+            <input type="text" class="w-full focus:outline-none  focus:ring-0  text-xl"
+                placeholder="What is you searhing for ?">
+            <div class="flex gap-2 xl:gap-4">
+                <x-icons.search />
+                <button @click="open = false" >
+                    x
+                </span>
+            </div>
         </div>
     </div>
 </nav>
