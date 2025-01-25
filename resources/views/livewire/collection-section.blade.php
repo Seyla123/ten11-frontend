@@ -1,4 +1,4 @@
-<section class="max-w-screen-2xl mx-auto">
+<section>
     <div class="flex gap-2 p-2">
         <div class="flex flex-col gap-2 items-center">
             <img src="{{asset('assets/collection.png')}}" alt="">

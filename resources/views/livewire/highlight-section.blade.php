@@ -1,7 +1,7 @@
-<section class="max-screen-2xl mx-auto p-2">
+<section class="">
     <h2 class="text-2xl py-2 font-medium">This Week's Highlights</h2>
-    <div class="grid grid-cols-2 gap-2 xl:grid-cols-4">
-        @for ($i = 0; $i < 4; $i++)
+    <div class="grid grid-cols-2 gap-4 xl:gap-8 xl:grid-cols-4">
+        @for ($i = 0; $i < 12; $i++)
             <div class="flex flex-col">
                 <div>
                     <img src="{{ asset('assets/hightligt1.jpg') }}" alt="">

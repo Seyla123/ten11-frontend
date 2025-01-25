@@ -1,5 +1,5 @@
 <nav>
-    <div class="flex justify-between px-4 items-center h-20 max-w-screen-2xl mx-auto">
+    <div class="flex justify-between px-4 items-center h-20 max-w-screen-xl mx-auto">
         {{-- hamburger menu and logo --}}
         <div class="flex gap-4 w-full">
             <x-icons.hamberger-menu />
@@ -19,7 +19,7 @@
 
             {{-- show when big screen --}}
             @if ($userName)
-                <div class="uppercase  sm:flex justify-center items-center gap-1">
+                <div class="uppercase hidden sm:flex justify-center items-center gap-1">
                     <p x-text="$wire.userName"></p>
                     <x-icons.arrow-down />
                 </div>
